@@ -17,4 +17,8 @@ public class CreditAccount extends Account {
     public Optional<BigDecimal> getCreditBalance() {
         return Optional.ofNullable(creditBalance);
     }
+
+	public void setCreditBalance(BigDecimal creditBalance) {
+		this.creditBalance = creditBalance;
+	}
 }

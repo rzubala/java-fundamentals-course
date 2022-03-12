@@ -1,7 +1,5 @@
 package com.bobocode.fp;
 
-import java.util.stream.IntStream;
-
 import com.bobocode.fp.exception.InvalidRangeException;
 
 /**
@@ -26,6 +24,6 @@ public class SumOfSquares {
         if (endInclusive < startInclusive) {
             throw new InvalidRangeException();
         }               
-        return IntStream.rangeClosed(startInclusive, endInclusive).reduce(0, (a, i) -> a + i*i);
+        return 0; //FIXME
     }
 }
